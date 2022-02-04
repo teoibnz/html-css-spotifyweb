@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Circular Std', sans-serif;
 }
 
 
@@ -57,6 +58,7 @@ section.top-section{
     height: 80vh;
     background-color: tomato;
     padding-left: 1rem;
+    position: relative;
     
 }
 
@@ -107,13 +109,19 @@ div.playlist-name{
     background-color: azure;
 }
 
-.icon-menu ul li{
+.list-type-none{
     list-style-type: none;
 }
 
-.icon ul li{
-    list-style-type: none;
+.user-box{
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    
 }
+
+
 
 #logo-container{
     background-color: black;
