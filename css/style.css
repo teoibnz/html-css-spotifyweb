@@ -5,3 +5,39 @@
     margin: 0;
     padding: 0;
 }
+
+
+footer{
+    height: 11vh;
+    background-color: gray;
+}
+.flex-box{
+    display: flex;
+}
+section.top-section{
+    height:9vh;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    height: 100%;
+}
+.left-main-menu{
+    width: 15%;
+    height: 80vh;
+    background-color: tomato;
+}
+
+.right-main-menu{
+    width: 85%;
+    background-color: yellowgreen;
+}
+
+#logo-container{
+    background-color: black;
+    height: 100%;
+    width: 15%;
+    color: white;
+}
