@@ -7,6 +7,27 @@
 }
 
 
+/* Media-query DESKTOP-FIRST */
+
+
+/* mid-size*/
+@media screen and (min-width: 769px) and (max-width:992px){
+
+}
+/* small-size */
+@media screen and (min-width: 577px) and (max-width:768px){
+
+}
+
+/* extra-small-size */
+@media screen and (max-width: 576px){
+
+}
+
+
+
+
+/* CSS-RULES */
 footer{
     height: 11vh;
     background-color: gray;
