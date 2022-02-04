@@ -11,7 +11,7 @@
 
 
 /* mid-size*/
-@media screen and (min-width: 769px) and (max-width:992px){
+@media screen and (min-width: 992px) and (max-width:1200px){
     nav.top-nav{ 
         width: 100%;
         flex-wrap: wrap;
@@ -20,7 +20,7 @@
     
 }
 /* small-size */
-@media screen and (min-width: 577px) and (max-width:768px){
+@media screen and (min-width: 768px) and (max-width:991px){
 
 }
 
@@ -71,11 +71,12 @@ nav.top-nav ul li{
 }
 
 div.playlist{
-    width: calc(15% - 1rem);
+    width: calc(15% - .5rem);
     height: 250px;
     background-color: red;
     margin: 1rem;
-    min-width: 212px;
+    min-width: 237px;
+    flex-shrink: 0;
     
 }
 
