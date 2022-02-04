@@ -12,7 +12,12 @@
 
 /* mid-size*/
 @media screen and (min-width: 769px) and (max-width:992px){
-
+    nav.top-nav{ 
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: hotpink;
+    }
+    
 }
 /* small-size */
 @media screen and (min-width: 577px) and (max-width:768px){
@@ -61,4 +66,16 @@ section.top-section{
     height: 100%;
     width: 15%;
     color: white;
+}
+#logo-container, .left-main-menu{
+    min-width: 288px;
+}
+
+nav.top-nav{
+    justify-content: center;
+    padding: 1rem;
+}
+nav.top-nav ul li{
+    display: inline-block;
+    padding: 0 1rem;
 }
