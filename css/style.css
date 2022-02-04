@@ -61,6 +61,39 @@ section.top-section{
     background-color: yellowgreen;
 }
 
+nav.top-nav{
+    justify-content: center;
+    padding: 1rem;
+}
+nav.top-nav ul li{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+div.playlist{
+    width: calc(15% - 1rem);
+    height: 250px;
+    background-color: red;
+    margin: 1rem;
+    min-width: 212px;
+    
+}
+
+div.playlist-cover{
+    height: 85%;
+    
+}
+
+div.playlist-name{
+    height: 15%;
+    text-align: center;
+}
+
+.playlist-container section{
+    flex-wrap: wrap;
+}
+
+
 #logo-container{
     background-color: black;
     height: 100%;
@@ -69,13 +102,4 @@ section.top-section{
 }
 #logo-container, .left-main-menu{
     min-width: 288px;
-}
-
-nav.top-nav{
-    justify-content: center;
-    padding: 1rem;
-}
-nav.top-nav ul li{
-    display: inline-block;
-    padding: 0 1rem;
 }
