@@ -36,6 +36,7 @@
 footer{
     height: 11vh;
     background-color: gray;
+    display: fixed;
 }
 .flex-box{
     display: flex;
@@ -49,22 +50,28 @@ section.top-section{
 
 .container{
     height: 100%;
+    
 }
 .left-main-menu{
     width: 15%;
     height: 80vh;
     background-color: tomato;
+    
 }
 
 .right-main-menu{
     width: 85%;
     background-color: yellowgreen;
+    height: 80vh;
+    overflow: scroll;
+    
 }
 
 nav.top-nav{
     justify-content: center;
     padding: 1rem;
 }
+
 nav.top-nav ul li{
     display: inline-block;
     padding: 0 1rem;
