@@ -118,10 +118,20 @@ div.playlist-name{
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
-    
+
 }
 
+.going-music{
+    width: 15%;
+}
 
+.player{
+    width: 75%;
+}
+
+.music-setting{
+    width: 10%;
+}
 
 #logo-container{
     background-color: black;
