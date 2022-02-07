@@ -35,28 +35,27 @@
 
 /* CSS-RULES */
 footer{
-    height: 11vh;
-    background-color: gray;
-    display: fixed;
+    height: 111px;
+    background-color: #282828;
 }
+
 .flex-box{
     display: flex;
 }
 section.top-section{
-    height:9vh;
-    background-color: aqua;
+    height:84px;
+    background-color: #080b12;
     justify-content: space-between;
     align-items: center;
 }
 
 .container{
-    height: 100%;
+    height: 776px;
     
 }
 .left-main-menu{
     width: 15%;
-    height: 80vh;
-    background-color: tomato;
+    background-color: #000000;
     padding-left: 1rem;
     position: relative;
     
@@ -64,12 +63,36 @@ section.top-section{
 
 .right-main-menu{
     width: 85%;
-    background-color: yellowgreen;
-    height: 80vh;
+    background-color: #141922;
     overflow: scroll;
     
 }
 
+.left-main-menu, .right-main-menu{
+    height: 80vh;
+}
+
+.call-to-action a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 30px;
+    border-radius: 25px;
+}
+
+#logo-container img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.font-white{
+    color: white;
+}
+.font-lg-grey{
+    color: #6d6d6d
+}
 nav.top-nav{
     justify-content: center;
     padding: 1rem;
@@ -78,6 +101,7 @@ nav.top-nav{
 nav.top-nav ul li{
     display: inline-block;
     padding: 0 1rem;
+    color: #7b7d82
 }
 
 div.playlist{
@@ -87,7 +111,6 @@ div.playlist{
     margin: 1rem;
     min-width: 237px;
     flex-shrink: 0;
-    
 }
 
 div.playlist-cover{
@@ -104,21 +127,44 @@ div.playlist-name{
     flex-wrap: wrap;
 }
 
-.icon{
-    width: 15%;
-    background-color: azure;
+
+.playlist-container h2, p.subtitle{
+    padding-left: 1rem;
 }
 
+.playlist-container p{
+    color: #5f6268;
+}
+
+.icon{
+    width: 15%;
+    font-size: 1.3rem;
+}
+
+.icon li{
+    padding-top: 10px;
+}
+
+.icon-menu li{
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
 .list-type-none{
     list-style-type: none;
 }
 
+.playlist-menu{
+    margin-top: 25px;
+}
+
+.playlist-menu a, ul{
+    margin-top: 20px;
+}
 .user-box{
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
-
 }
 
 .going-music{
