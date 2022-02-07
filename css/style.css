@@ -105,8 +105,7 @@ nav.top-nav ul li{
 }
 
 div.playlist{
-    width: calc(15% - .5rem);
-    height: 250px;
+    width: calc(14% - 1rem);
     margin: 1rem;
     min-width: 237px;
     flex-shrink: 0;
@@ -141,6 +140,13 @@ div.playlist-name{
     color: #5f6268;
 }
 
+.playlist-container section{
+    margin-bottom: 50px;
+}
+
+.cover-radius{
+    border-radius: 50%;
+}
 .icon{
     width: 15%;
     font-size: 1.3rem;
@@ -165,13 +171,27 @@ div.playlist-name{
 .playlist-menu a, ul{
     margin-top: 20px;
 }
+
+.playlist-menu ul li{
+    margin-bottom: 10px;
+}
 .user-box{
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
+    width: 75%;
 }
 
+.installation{
+    border-bottom: 1px solid #7b7d82;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.user-tag{
+    padding-bottom: 15px;
+}
 .going-music{
     width: 15%;
 }
