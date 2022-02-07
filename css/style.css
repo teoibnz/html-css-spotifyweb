@@ -12,22 +12,37 @@
 
 
 /* mid-size*/
-@media screen and (min-width: 992px) and (max-width:1200px){
+@media screen and (min-width: 990px) and (max-width: 1200px){
     nav.top-nav{ 
         width: 100%;
         flex-wrap: wrap;
-        background-color: hotpink;
     }
-    
+        
 }
 /* small-size */
 @media screen and (min-width: 768px) and (max-width:991px){
-
+    nav.top-nav{
+        text-align: center;
+        justify-content: flex-start;
+        align-items: space-between;
+    }
 }
 
 /* extra-small-size */
 @media screen and (max-width: 576px){
+    div.icon-menu, div.playlist-menu, span.font-lg-grey, div.user-tag span{
+        display: none;
+    }
 
+    .left-main-menu, .user-tag, .installation, .menu-icon{
+        width: 50px;
+    }
+    .user-box{
+        width: 15%;
+    }
+    #logo-container, .left-main-menu{
+        max-width: 50px;
+    }
 }
 
 
@@ -35,7 +50,7 @@
 
 /* CSS-RULES */
 footer{
-    height: 111px;
+    height: 112px;
     background-color: #282828;
 }
 
@@ -49,12 +64,12 @@ section.top-section{
     align-items: center;
 }
 
-.container{
+/* .container{
     height: 776px;
     
-}
+} */
 .left-main-menu{
-    width: 15%;
+    width: 10%;
     background-color: #000000;
     padding-left: 1rem;
     position: relative;
@@ -62,10 +77,9 @@ section.top-section{
 }
 
 .right-main-menu{
-    width: 85%;
+    width: 90%;
     background-color: #141922;
     overflow: scroll;
-    
 }
 
 .left-main-menu, .right-main-menu{
@@ -80,13 +94,6 @@ section.top-section{
     border-radius: 25px;
 }
 
-#logo-container img{
-    height: 50%;
-    width: 50%;
-    object-fit: cover;
-    margin: 1rem;
-}
-
 .font-white{
     color: white;
 }
@@ -96,6 +103,7 @@ section.top-section{
 nav.top-nav{
     justify-content: center;
     padding: 1rem;
+    margin-bottom: 25px;
 }
 
 nav.top-nav ul li{
@@ -180,7 +188,7 @@ div.playlist-name{
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
-    width: 75%;
+    /* width: 75%; */
 }
 
 .installation{
@@ -226,8 +234,17 @@ div.playlist-name{
 #logo-container{
     background-color: black;
     height: 100%;
-    width: 15%;
+    width: 192px;
 }
 #logo-container, .left-main-menu{
-    min-width: 288px;
+    min-width: 192px;
+    flex-shrink: 0;
+    
+}
+
+#logo-container img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    margin: 1rem;
 }
