@@ -119,7 +119,7 @@ div.playlist-cover{
 div.playlist-cover img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 div.playlist-name{
@@ -187,10 +187,29 @@ div.playlist-name{
     border-bottom: 1px solid #7b7d82;
     margin-bottom: 15px;
     padding-bottom: 10px;
+    height: 25px;
 }
 
 .user-tag{
     padding-bottom: 15px;
+}
+
+.user-tag img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-color: #5f6268;
+    border-radius: 50%;
+}
+
+.user-tag span{
+    vertical-align: super;
+}
+
+.installation img{
+    width: 25px;
+    height: 100%;
+    
 }
 .going-music{
     width: 15%;
