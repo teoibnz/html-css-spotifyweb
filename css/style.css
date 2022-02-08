@@ -11,7 +11,7 @@
 /* CSS-RULES */
 
 body{
-    min-width: 530px;
+    min-width: 560px;
 }
 footer{
     height: 9vh;
@@ -37,14 +37,13 @@ section.top-section{
     background-color: #000000;
     padding-left: 1rem;
     position: relative;
-    
+    overflow-y: auto;
 }
 
 .right-main-menu{
     width: 90%;
     background-color: #141922;
-    overflow: scroll;
-    min-width: 1728px;
+    overflow: auto;
 }
 
 .left-main-menu, .right-main-menu{
@@ -140,6 +139,7 @@ div.playlist-name{
 
 .playlist-menu{
     margin-top: 25px;
+    padding-top: 25px;
 }
 
 .playlist-menu a, ul{
@@ -189,6 +189,7 @@ div.playlist-name{
     width: 15%;
     align-items: center;
     justify-content: space-evenly;
+    flex-shrink: 0;
     
 }
 
@@ -202,6 +203,7 @@ div.playlist-name{
     justify-content: flex-start;
     align-items: center;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 #logo-container{
@@ -268,6 +270,7 @@ div.riproduction-bar{
     height: 5px;
     background-color: #5f6268;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 div.riproduction-bar > *{
@@ -283,14 +286,16 @@ div.riproduction-bar > *{
     height: 5px;
     background-color: white;
     border-radius: 5px;
+    
 }
+
 
 
 /* Media-query DESKTOP-FIRST */
 
 
 /* mid-size*/
-@media screen and (min-width:769px) and (max-width:991px){
+@media screen and (min-width:992px) and (max-width:1500px){
     nav.top-nav{ 
         width: 100%;
         
@@ -301,7 +306,7 @@ div.riproduction-bar > *{
         
 }
 /* small-size */
-@media screen and (min-width:578px ) and (max-width:768px){
+@media screen and (min-width:595px ) and (max-width:991px){
     nav.top-nav{
         text-align: center;
         justify-content: flex-start;
@@ -314,7 +319,7 @@ div.riproduction-bar > *{
 }
 
 /* extra-small-size */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 594px){
     div.icon-menu, div.playlist-menu, span.font-lg-grey, div.user-tag span, #logo-container img{
         display: none;
     }
@@ -343,6 +348,10 @@ div.riproduction-bar > *{
         background-size: contain;
         background-repeat: no-repeat;
         transform: scale(0.5);
+    }
+
+    .call-to-action{
+        width: 63%;
     }
     
 }
