@@ -74,6 +74,7 @@ nav.top-nav{
 nav.top-nav ul li{
     display: inline-block;
     padding: 0 1rem;
+    margin-bottom: 25px;
     color: #7b7d82
 }
 
@@ -99,11 +100,6 @@ div.playlist-name{
     height: 15%;
     text-align: center;
 }
-
-.playlist-container section{
-    /* flex-wrap: wrap; */
-}
-
 
 .playlist-container h2, p.subtitle{
     padding-left: 1rem;
