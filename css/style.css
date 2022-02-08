@@ -12,19 +12,26 @@
 
 
 /* mid-size*/
-@media screen and (min-width: 990px) and (max-width: 1200px){
+@media screen and (min-width:769px) and (max-width:991px){
     nav.top-nav{ 
         width: 100%;
+        
+    }
+    .playlist-container section{
         flex-wrap: wrap;
     }
         
 }
 /* small-size */
-@media screen and (min-width: 768px) and (max-width:991px){
+@media screen and (min-width:578px ) and (max-width:768px){
     nav.top-nav{
         text-align: center;
         justify-content: flex-start;
         align-items: space-between;
+    }
+
+    .playlist-container section{
+        flex-wrap: wrap;
     }
 }
 
@@ -34,14 +41,23 @@
         display: none;
     }
 
-    .left-main-menu, .user-tag, .installation, .menu-icon{
+    .user-tag, .installation, .menu-icon{
         width: 50px;
     }
     .user-box{
-        width: 15%;
+        width: 50px;
     }
-    #logo-container, .left-main-menu{
+    #logo-container {
         max-width: 50px;
+    }
+
+    .left-main-menu{
+        width: 3%;
+        min-width: 60px;
+    }
+
+    .playlist-container section{
+        flex-wrap: wrap;
     }
 }
 
@@ -50,8 +66,9 @@
 
 /* CSS-RULES */
 footer{
-    height: 112px;
+    height: 71px;
     background-color: #282828;
+    position: relative;
 }
 
 .flex-box{
@@ -64,12 +81,11 @@ section.top-section{
     align-items: center;
 }
 
-/* .container{
-    height: 776px;
+.container{
+    height: calc(100% - 71px);
     
-} */
+}
 .left-main-menu{
-    width: 10%;
     background-color: #000000;
     padding-left: 1rem;
     position: relative;
@@ -80,10 +96,12 @@ section.top-section{
     width: 90%;
     background-color: #141922;
     overflow: scroll;
+    min-width: 1728px;
 }
 
 .left-main-menu, .right-main-menu{
-    height: 80vh;
+    height: 84vh;
+    min-width: 192px;
 }
 
 .call-to-action a{
@@ -114,8 +132,8 @@ nav.top-nav ul li{
 
 div.playlist{
     width: calc(14% - 1rem);
-    margin: 1rem;
-    min-width: 237px;
+    margin: 1.5rem;
+    min-width: 160px;
     flex-shrink: 0;
 }
 
@@ -136,7 +154,7 @@ div.playlist-name{
 }
 
 .playlist-container section{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -157,7 +175,7 @@ div.playlist-name{
 }
 .icon{
     width: 15%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .icon li{
@@ -165,7 +183,7 @@ div.playlist-name{
 }
 
 .icon-menu li{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-top: 10px;
 }
 .list-type-none{
@@ -235,11 +253,6 @@ div.playlist-name{
     background-color: black;
     height: 100%;
     width: 192px;
-}
-#logo-container, .left-main-menu{
-    min-width: 192px;
-    flex-shrink: 0;
-    
 }
 
 #logo-container img{
