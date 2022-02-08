@@ -8,81 +8,25 @@
 }
 
 
-/* Media-query DESKTOP-FIRST */
-
-
-/* mid-size*/
-@media screen and (min-width:769px) and (max-width:991px){
-    nav.top-nav{ 
-        width: 100%;
-        
-    }
-    .playlist-container section{
-        flex-wrap: wrap;
-    }
-        
-}
-/* small-size */
-@media screen and (min-width:578px ) and (max-width:768px){
-    nav.top-nav{
-        text-align: center;
-        justify-content: flex-start;
-        align-items: space-between;
-    }
-
-    .playlist-container section{
-        flex-wrap: wrap;
-    }
-}
-
-/* extra-small-size */
-@media screen and (max-width: 576px){
-    div.icon-menu, div.playlist-menu, span.font-lg-grey, div.user-tag span{
-        display: none;
-    }
-
-    .user-tag, .installation, .menu-icon{
-        width: 50px;
-    }
-    .user-box{
-        width: 50px;
-    }
-    #logo-container {
-        max-width: 50px;
-    }
-
-    .left-main-menu{
-        width: 3%;
-        min-width: 60px;
-    }
-
-    .playlist-container section{
-        flex-wrap: wrap;
-    }
-}
-
-
-
-
 /* CSS-RULES */
 footer{
-    height: 71px;
+    height: 9vh;
     background-color: #282828;
-    position: relative;
+    margin: 0 auto;
 }
 
 .flex-box{
     display: flex;
 }
 section.top-section{
-    height:84px;
+    height:67.9px;
     background-color: #080b12;
     justify-content: space-between;
     align-items: center;
 }
 
 .container{
-    height: calc(100% - 71px);
+    height: 84vh;
     
 }
 .left-main-menu{
@@ -100,7 +44,7 @@ section.top-section{
 }
 
 .left-main-menu, .right-main-menu{
-    height: 84vh;
+    height: 100%;
     min-width: 192px;
 }
 
@@ -239,10 +183,13 @@ div.playlist-name{
 }
 .going-music{
     width: 15%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .player{
     width: 75%;
+    
 }
 
 .music-setting{
@@ -260,4 +207,112 @@ div.playlist-name{
     width: 50%;
     object-fit: contain;
     margin: 1rem;
+}
+
+div.mini-cover{
+    width: 50px;
+    height: 50px;    
+}
+
+div.mini-cover img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+div.song-name span, i, .folder{
+    font-size: 0.8rem;
+    color: #5f6268;
+}
+
+div.player .comand, .riproduction-bar{
+    height: 50%;
+}
+
+.comand{
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.comand i{
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.comand i.fa-play-circle{
+    font-size: 2rem;
+}
+
+div.riproduction-bar{
+    margin: auto;
+    justify-content: space-evenly;
+    width: 40%;
+    padding-top: 5px;
+    align-items: center;
+}
+.riproduction{
+    width: 65%;
+    height: 5px;
+    background-color: #5f6268;
+    border-radius: 5px;
+}
+
+div.riproduction-bar > *{
+    font-size: 0.7rem;
+}
+
+
+/* Media-query DESKTOP-FIRST */
+
+
+/* mid-size*/
+@media screen and (min-width:769px) and (max-width:991px){
+    nav.top-nav{ 
+        width: 100%;
+        
+    }
+    .playlist-container section{
+        flex-wrap: wrap;
+    }
+        
+}
+/* small-size */
+@media screen and (min-width:578px ) and (max-width:768px){
+    nav.top-nav{
+        text-align: center;
+        justify-content: flex-start;
+        align-items: space-between;
+    }
+
+    .playlist-container section{
+        flex-wrap: wrap;
+    }
+}
+
+/* extra-small-size */
+@media screen and (max-width: 576px){
+    div.icon-menu, div.playlist-menu, span.font-lg-grey, div.user-tag span{
+        display: none;
+    }
+
+    .user-tag, .installation, .menu-icon{
+        width: 50px;
+    }
+    .user-box{
+        width: 50px;
+    }
+    #logo-container {
+        max-width: 50px;
+    }
+
+    .left-main-menu{
+        width: 3%;
+        min-width: 60px;
+    }
+
+    .playlist-container section{
+        flex-wrap: wrap;
+    }
 }
