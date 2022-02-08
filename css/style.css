@@ -194,6 +194,9 @@ div.playlist-name{
 
 .music-setting{
     width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
 }
 
 #logo-container{
@@ -261,6 +264,17 @@ div.riproduction-bar{
 
 div.riproduction-bar > *{
     font-size: 0.7rem;
+}
+
+.music-setting i{
+    padding-right: 10px;
+}
+
+.white-riproduction{
+    width: 17%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 
