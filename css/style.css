@@ -9,6 +9,10 @@
 
 
 /* CSS-RULES */
+
+body{
+    min-width: 530px;
+}
 footer{
     height: 9vh;
     background-color: #282828;
@@ -185,11 +189,12 @@ div.playlist-name{
     width: 15%;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 
 .player{
     width: 75%;
-    
+    flex-shrink: 4;
 }
 
 .music-setting{
@@ -215,17 +220,20 @@ div.playlist-name{
 div.mini-cover{
     width: 50px;
     height: 50px;    
+    flex-shrink: 0;
 }
 
 div.mini-cover img{
     width: 100%;
     height: 100%;
     background-size: contain;
+    flex-shrink: 0;
 }
 
 div.song-name span, i, .folder{
     font-size: 0.8rem;
     color: #5f6268;
+    flex-shrink: 0;
 }
 
 div.player .comand, .riproduction-bar{
@@ -307,18 +315,16 @@ div.riproduction-bar > *{
 
 /* extra-small-size */
 @media screen and (max-width: 576px){
-    div.icon-menu, div.playlist-menu, span.font-lg-grey, div.user-tag span{
+    div.icon-menu, div.playlist-menu, span.font-lg-grey, div.user-tag span, #logo-container img{
         display: none;
     }
 
-    .user-tag, .installation, .menu-icon{
-        width: 50px;
+    .user-tag, .installation, .menu-icon, .user-box{
+        width: 40px;
     }
-    .user-box{
-        width: 50px;
-    }
+    
     #logo-container {
-        max-width: 50px;
+        max-width: 60px;
     }
 
     .left-main-menu{
@@ -329,4 +335,14 @@ div.riproduction-bar > *{
     .playlist-container section{
         flex-wrap: wrap;
     }
+
+    #logo-container{
+        background-image: url(../img/logo-small.svg);
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: scale(0.5);
+    }
+    
 }
