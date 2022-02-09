@@ -361,5 +361,23 @@ div.riproduction-bar > *{
     div.playlist{
         width: calc((100% / 2) - 3rem);
     }
+
+    .going-music{
+        width: 25%;
+    }
+
+    .player{
+        width: 50%;
+    }
+
+    .music-setting{
+        width: 25%;
+    }
+
+    .comand, div.riproduction-bar{
+        width: 70%;
+    }
+
+
     
 }
