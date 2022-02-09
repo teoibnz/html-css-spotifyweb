@@ -121,12 +121,31 @@ div.playlist-cover{
 }
 
 .call-to-action:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .top-nav li:hover{
     color: white;
 }
+
+.playlist-menu a:hover{
+    color: white;
+}
+
+.installation span:hover{
+    color: white;
+}
+
+ul.list-type-none li:hover{
+    color: white;
+}
+
+
+
+
+
+
+
 
 div.playlist-cover img{
     width: 100%;
