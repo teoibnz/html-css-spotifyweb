@@ -474,8 +474,11 @@ div.riproduction-bar > *{
 
     .comand, div.riproduction-bar{
         width: 70%;
+    } 
+    .song-name{
+        margin-left: 15px;
+    } 
+    .heart{
+        margin-right: 10px;
     }
-
-
-    
 }
