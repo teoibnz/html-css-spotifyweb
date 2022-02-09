@@ -317,6 +317,10 @@ div.riproduction-bar > *{
     .playlist-container section{
         flex-wrap: wrap;
     }
+
+    div.playlist{
+        width: calc((100% / 2) - 3rem);
+    }
 }
 
 /* extra-small-size */
@@ -353,6 +357,9 @@ div.riproduction-bar > *{
 
     .call-to-action{
         width: 63%;
+    }
+    div.playlist{
+        width: calc((100% / 2) - 3rem);
     }
     
 }
