@@ -108,6 +108,10 @@ div.playlist-cover{
     font-size: 3.5rem;
 }
 
+
+/* COMANDI HOVER */
+
+
 .playlist:hover .hover-play{
     display: block;
 }
@@ -116,6 +120,13 @@ div.playlist-cover{
     filter: opacity(50%);;
 }
 
+.call-to-action:hover{
+    transform: scale(1.2);
+}
+
+.top-nav li:hover{
+    color: white;
+}
 
 div.playlist-cover img{
     width: 100%;
