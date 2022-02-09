@@ -61,6 +61,10 @@ section.top-section{
     border-radius: 25px;
 }
 
+.call-to-action{
+    margin-right: 20px;
+}
+
 .font-white{
     color: white;
 }
@@ -232,7 +236,7 @@ div.playlist-name{
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
-    /* width: 75%; */
+    width: 75%;
 }
 
 .installation{
@@ -453,9 +457,6 @@ div.riproduction-bar > *{
         transform: scale(0.5);
     }
 
-    .call-to-action{
-        width: 63%;
-    }
     div.playlist{
         width: calc((100% / 2) - 3rem);
     }
