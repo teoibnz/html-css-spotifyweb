@@ -140,9 +140,34 @@ ul.list-type-none li:hover{
     color: white;
 }
 
+.song-name span:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.heart i:hover{
+    color: white;
+}
+
+.folder i:hover{
+    color: white;
+}
+
+.comand i.fa-play-circle:hover{
+    transform: scale(1.5);
+}
+
+.white-riproduction:hover .green-riproduction{
+    display: block;
+}
+
+.white-riproduction:hover .circle{
+    display: block;
+}
 
 
 
+/* FINE SEZIONE HOVER */
 
 
 
@@ -338,8 +363,24 @@ div.riproduction-bar > *{
     width: 17%;
     height: 5px;
     background-color: white;
+    border-radius: 5px;    
+}
+
+.green-riproduction{
+    width: 100%;
+    height: 5px;
+    background-color: greenyellow;
     border-radius: 5px;
-    
+    display: none;
+}
+
+.circle{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: none;
+    margin-top: -5px;
 }
 
 
